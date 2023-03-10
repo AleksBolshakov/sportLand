@@ -1,0 +1,22 @@
+.app__header {
+    margin-top: 6vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    &-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 5.8rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    &-subtitle {
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

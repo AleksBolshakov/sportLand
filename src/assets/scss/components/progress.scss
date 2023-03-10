@@ -1,0 +1,28 @@
+.progress {
+    background-color: $white;
+    border-radius: 10px;
+    height: 10px;
+    max-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    &__bar {
+        background-color: $blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        .init & {
+            animation: move 3s linear infinite;
+        }
+    }
+}
+@keyframes move {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

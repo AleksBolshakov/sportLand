@@ -1,0 +1,62 @@
+.playtable__cards {
+    margin-top: 1rem;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 17.4rem;
+        margin: 0 auto;
+        &.error .playtable__cards-card {
+            border-color: #D52D30;
+        }
+    }
+    &-card {
+        position: relative;
+        border: 2px dashed #ffffff;
+        width: 8rem;
+        height: 12rem;
+        border-radius: 0.8rem;
+        background: #130b41;
+        & + div {
+            margin-left: 1.4rem;
+        }
+    }
+    &-description {
+        margin-top: 0.6rem;
+        font-size: 1.4rem;
+        height: 2.8rem;
+        position: relative;
+        width: 100%;
+        min-width: 36rem;
+        text-align: center;
+        color: #ffffff;
+        &.error {
+            color: #D52D30;
+        }
+        &.success {
+            color: #17C365;
+        }
+    }
+    &-column {
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        .item {
+            width: 8rem;
+            height: 12rem;
+            flex: 0 0 8rem;
+
+            .playtable__emoji-item {
+                animation: none;
+                transform: none;
+                margin: 0;
+            }
+            & + div {
+                margin-left: 1.4rem;
+            }
+        }
+    }
+}

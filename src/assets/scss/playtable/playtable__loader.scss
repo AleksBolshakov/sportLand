@@ -1,0 +1,6 @@
+.playtable__loader {
+    display: none;
+    &.init {
+        display: block;
+    }
+}

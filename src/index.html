@@ -1,0 +1,753 @@
+---
+layout: default
+title: Base
+---
+
+<!-- main section -->
+<div class="app__wrapper">
+    <div class="app__header">
+        <div class="app__header-title"> Найди ассоциации </div>
+        <div class="app__header-subtitle">Мы загадали самые распространенные!</div>
+    </div>
+
+    <div class="playtable">
+        <div class="playtable__header">
+            <div class="playtable__question">
+                <div class="playtable__question-counter">1/10 </div>
+                <div class="playtable__question-title">Две ассоциации<br>с «Челси»</div>
+            </div>
+        </div>
+        <div class="playtable__timer"></div>
+        <div class="playtable__cards">
+            <div class="playtable__cards-wrapper">
+                <div id="dropzone" class="playtable__cards-column playtable__column dropzone"></div>
+                <div class="playtable__cards-card"></div>
+                <div class="playtable__cards-card"></div>
+
+            </div>
+
+            <div class="playtable__cards-description">
+                Перетаскивайте карточки на поле
+            </div>
+        </div>
+
+        <div class="playtable__emoji playtable__emoji-1" data-title="Две ассоциации с «Челси»">
+            <div class="item" data-valid="false" data-title="Ошиблись, поищите еще!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q1-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ничего не загадали">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q1-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Традиционный английский напиток – чай, а не мате">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q1-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ошиблись, поищите еще!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q1-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Талисман «Челси» – лев Стэмфорд">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q1-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Главный цвет клуба – синий">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q1-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div >
+        <div class="playtable__emoji playtable__emoji-2 hidden" data-title="Две ассоциации с «Баварией»">
+            <div class="item" data-valid="true" data-title="Пиво – неотъемлемая часть немецкого футбола">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q2-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ничего не загадали">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q2-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="«Бавария» 32 раза выигрывала чемпионат Германии. Это рекорд!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q2-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ошиблись, поищите еще!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q2-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Талисман «Челси» – лев Стэмфорд">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q2-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Главный цвет клуба – синий">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q2-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-3 hidden" data-title="Две ассоциации с «Бенфикой»">
+            <div class="item" data-valid="true" data-title="Верно! «Бенфика» играет в португальской Примейра-лиге">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q3-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ничего не загадали">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q3-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Символ клуба – белоголовый орлан">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q3-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Скудетто нашивают победители Серии А">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q3-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Мимо!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q3-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ничего не загадали, увы">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q3-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-4 hidden" data-title="Две ассоциации с «Реалом»">
+            <div class="item" data-valid="true" data-title="Верно! Real в переводе с испанского – «королевский»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q4-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ну нет! Это ассоциация с «Локомотивом»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q4-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Хорошая попытка, но нет">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q4-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ошибка, подумайте еще!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q4-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Говорим «галактикос», подразумеваем «Реал»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q4-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="«Реал» выступает в Испании">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q4-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-5 hidden" data-title="Три ассоциации с «Манчестер Сити»">
+            <div class="item" data-valid="false" data-title="Бенжамен Менди сравнивал команду с акулами, а не крокодилами">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q5-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="«Лысый шарлатан» Пеп Гвардиола тренирует «Ман Сити» с 2016-года">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q5-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="«Ман Сити» – самый дорогой клуб в мире">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q5-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Норвежец Эрлинг Холанд – лучший бомбардир клуба">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q5-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Мимо!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q5-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ничего не загадали, увы">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q5-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ничего не загадали, увы">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q5-7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-6 hidden" data-title="Три ассоциации с «Наполи»">
+            <div class="item" data-valid="false" data-title="Ассоциаций, увы, нет">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q6-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Везувий всего в 15 км от Неаполя, где базируется команда">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q6-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="«Ман Сити» – самый дорогой клуб в мире">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q6-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Неаполь невозможно представить без пиццы и «Наполи»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q6-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Маскот клуба – осел, а не слон">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q6-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="В 2022 году Хвича Кварацхелия перебрался в «Наполи»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q6-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Промах!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q6-7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-7 hidden" data-title="Три ассоциации с «Ливерпулем»">
+            <div class="item" data-valid="true" data-title="Верно! Real в переводе с испанского – «королевский»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q7-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Кепка – узнаваемый аксессуар Юргена Клоппа">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q7-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="«Ман Сити» – самый дорогой клуб в мире">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q7-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Легендарная четверка «Битлз» тоже из Ливерпуля">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q7-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Маскот клуба – осел, а не слон">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q7-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Нет, мыльные пузыри запускают перед матчами «Вест Хэма»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q7-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Мохаммед Салах – форвард не только «Ливерпуля», но и сборной Египта">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q7-7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-8 hidden" data-title="Три ассоциации с «Интером»">
+            <div class="item" data-valid="false" data-title="Фонтан Треви находится в Риме, а вот «Интер» – клуб из Милана">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q8-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Мимо!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q8-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="В составе «Интера» нет ни одного бразильца">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q8-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Никаких ассоциаций">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q8-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Компания «Пирелли» 26 лет была титульным спонсором клуба">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q8-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Со змеей на груди «Интер» играл в 1980-х">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q8-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="«Интером» владеет китайская компания">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q8-7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-9 hidden" data-title="Три ассоциации с «ПСЖ»">
+            <div class="item" data-valid="false" data-title="Мы знаем только футбольный клуб «ПСЖ»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Круассан – из Франции, как и «ПСЖ»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="«ПСЖ» – самый титулованный клуб Франции (45 трофеев)">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="В команде нет игрока с таким номером">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Лео Месси нередко называют «инопланетянином»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Со змеей на груди «Интер» играл в 1980-х">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Килиана Мбаппе часто сравнивают с Черепашкой-ниндзя">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Мимо!">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q9-8.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playtable__emoji playtable__emoji-10 hidden" data-title="Три ассоциации с «Боруссией»">
+            <div class="item" data-valid="false" data-title="Ну уж нет! Футболисты не ходят с портфелями">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Брецель – популярный немецкий крендель, а «Боруссия» – популярный немецкий клуб">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Прозвище немецкого клуба – «шмели»">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Совсем не то">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Капитан команды Марко Ройс – один из самых травматичных игроков современности">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="true" data-title="Лидер «Боруссии» сейчас – англичанин Джуд Беллингем">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Сатурн и «Боруссия»? Ничего общего">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+            <div class="item" data-valid="false" data-title="Ассоциаций нет">
+                <div class="playtable__emoji-item draggable">
+                    <div class="playtable__emoji-side playtable__emoji-front">
+                        <div class="playtable__emoji-img">
+                            <img src="img/cards/q10-8.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="playtable__emoji-side playtable__emoji-back"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="playtable__loader mt-5">
+            <div class="progress mb-5">
+                <div class="progress__bar" style="width: 0%"></div>
+            </div>
+            <button class="btn btn__default" type="button">К следующему вопросу</button>
+        </div>
+
+        <div class="playtable__end">
+            <div class="playtable__end-title">Хорошая работа! Воспользуйтесь <span>бонусом 2000₽ от Фонбет</span> и возвращайтесь в игру!</div>
+            <div class="playtable__end-actions">
+                <a href="" class="btn btn__primary">Забрать фрибет</a>
+                <button class="btn btn__default" type="button">Продолжить игру</button>
+            </div>
+        </div>
+    </div>
+
+</div>

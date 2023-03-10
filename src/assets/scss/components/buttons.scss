@@ -1,0 +1,65 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-weight: $font-weight-normal;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: $transition-button;
+
+    &__default {
+        background-color:   $btn__default-bg;
+        border-color:       $btn__default-border;
+        color:              $btn-_default-color;
+        border-radius:      $btn__default-radius;
+        height:             4.4rem;
+        padding:            15px 25px;
+        font-size:          21px;
+        min-width:          300px;
+        &.active {
+            background-color: $dark;
+            color: $white;
+        }
+    }
+    &__primary {
+        background-color:   $btn__primary-bg;
+        border-color:       $btn__primary-border;
+        color:              $btn-_primary-color;
+        border-radius:      $btn__primary-radius;
+        height:             4.4rem;
+        padding:            15px 25px;
+        font-size:          21px;
+        min-width:          300px;
+        &.active {
+            background-color: $dark;
+            color: $white;
+        }
+    }
+    &__icon {
+        width: 45px;
+        height: 45px;
+        flex: 0 0 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        padding: 0;
+    }
+    &__more {
+        padding-left: 100px;
+        padding-right: 100px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark;
+        svg {
+            margin-right: 12px;
+        }
+    }
+}

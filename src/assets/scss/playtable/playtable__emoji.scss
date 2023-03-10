@@ -1,0 +1,112 @@
+.playtable__emoji {
+
+    margin-top: 4.5rem;
+    display: flex;
+    padding-bottom: 6rem;
+    user-select: none;
+    &.hidden {
+        display: none;
+    }
+    .item:nth-child(1) {
+        --rotation-deg: -3.29653deg;
+        --transformY: 1.66975px;
+    }
+    .item:nth-child(2) {
+        --rotation-deg: 1.81507deg;
+        --transformY: 1.72098px;
+    }
+    .item:nth-child(3) {
+        --rotation-deg: -1.84746deg;
+        --transformY: 2.43184px;
+    }
+    .item:nth-child(4) {
+        --rotation-deg: 1.97656deg;
+        --transformY: 1.54886px;
+    }
+    .item:nth-child(5) {
+        --rotation-deg: 4.88463deg;
+        --transformY: 1.84009px;
+    }
+    .item:nth-child(6) {
+        --rotation-deg: -4.38002deg;
+        --transformY: 2.22382px;
+    }
+    &-item {
+        border: 0;
+        padding: 0;
+        background: none;
+        width: 8rem;
+        height: 12rem;
+        flex: 1;
+        display: inline-block;
+        border-radius: 0.8rem;
+        position: relative;
+        margin-left: 0.4rem;
+        perspective: 100rem;
+        -moz-perspective: 100rem;
+        transition: transform .5s ease;
+        cursor: pointer;
+        -webkit-animation: liveTransform 4s ease infinite;
+        animation: liveTransform 4s ease infinite;
+        &.ghost {
+            transform: none;
+            animation: none;
+        }
+    }
+    &-side {
+        pointer-events: none;
+        overflow: hidden;
+
+        width: 101%;
+        border-radius: 0.8rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        box-shadow: 0 0 16px rgb(0 0 0 / 15%);
+        transition: box-shadow .25s ease,transform .4s ease-in-out;
+        z-index: 3;
+    }
+    &-front {
+        background: #fff;
+        color: #000;
+        overflow: visible;
+
+
+    }
+    &-back {
+        background: #fff;
+        transform: rotateY(-180deg);
+        display: none;
+    }
+    &-img {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        user-select: none;
+        position: relative;
+        z-index: 12;
+    }
+    &-drag {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes liveTransform {
+    0% {
+        transform: translateY(var(--transformY)) rotate(var(--rotation-deg))
+    }
+
+    50% {
+        transform: translateY(calc(var(--transformY)*-1)) rotate(calc(var(--rotation-deg) - 1deg))
+    }
+
+    to {
+        transform: translateY(var(--transformY)) rotate(var(--rotation-deg))
+    }
+}

@@ -1,0 +1,12 @@
+.playtable {
+    margin-top: 3vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 3vh;
+    &__header {
+        margin-top: 1rem;
+    }
+}

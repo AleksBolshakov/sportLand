@@ -1,0 +1,29 @@
+.header {
+    padding: 2vh 3rem 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    .logo {
+        display: flex;
+        align-items: center;
+        svg {
+            width: 100%;
+        }
+        &__fonbet {
+            width: 114px;
+            height: 22px;
+            display: flex;
+            cursor: pointer;
+        }
+        .logo__feat {
+            width: 10px;
+            margin: 0 1.1rem;
+        }
+        .logo__sports {
+            width: 132px;
+            height: 32px;
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,175 @@
+// Colors
+$white: 		#FFFFFF;
+$gray-light: 	#F4F4F4;
+$gray: 			#D9D9D9;
+$gray-medium:	#CDCDCD;
+$gray-dark: 	#727272;
+$dark: 			#000000;
+$primary: 		#d52d30;
+$blue:    #0d6efd;
+$body-bg: 		$white;
+$body-color: 	$dark;
+
+$link-color: 	#000000;
+
+$enable-caret: 									false !default;
+$enable-rounded: 								true !default;
+$enable-shadows: 								false !default;
+$enable-gradients: 								false !default;
+$enable-transitions: 							true !default;
+$enable-prefers-reduced-motion-media-query: 	true !default;
+$enable-hover-media-query: 						true !default;
+$enable-grid-classes: 							true !default;
+$enable-pointer-cursor-for-buttons: 			true !default;
+$enable-print-styles: 							true !default;
+$enable-responsive-font-sizes: 					false !default;
+$enable-validation-icons: 						false !default;
+$enable-deprecation-messages: 					false !default;
+
+// Button
+$btn__default-bg: 		$white;
+$btn__default-border:	$white;
+$btn__default-color: 	$dark;
+$btn__default-radius: 	5rem;
+
+$btn__primary-border:	$primary;
+$btn__primary-bg: 		$primary;
+$btn__primary-color: 	$white;
+$btn__primary-radius: 	5rem;
+
+
+// Cards
+$card-bg: 						var(--card-bg);
+$card-color: 					var(--card-color);
+$card-color-active: 			var(--card-color-active);
+$card-shadow: 					var(--card-shadow);
+$card-icon-border: 				var(--card-icon-border);
+
+// Box shadow
+$box-shadow:                  0px 20px 16px -16px rgba($dark, .3);
+
+
+// Border radius
+$border-radius: 	1rem;
+$border-radius-xs: 	calc($border-radius * .5);
+$border-radius-sm: 	calc($border-radius * .75);
+
+// Fonts
+$font-family-sans-serif:  'CeraPro', sans-serif !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+
+// Transition
+$transition-base: all .4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-fade: opacity .4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-collapse-width: width .4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-bg: background-color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-shadow: box-shadow .4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-button: color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95),background-color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95),border-color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95),box-shadow .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$transition-card: color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95),background-color 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95),box-shadow 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+// Font weight
+$font-weight-lighter: 	lighter !default;
+$font-weight-light: 	300 !default;
+$font-weight-normal: 	400 !default;
+$font-weight-medium: 	500 !default;
+$font-weight-semibold: 	600 !default;
+$font-weight-bold: 		700 !default;
+$font-weight-bolder: 	800 !default;
+$font-weight-black: 	900 !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$headings-margin-bottom: 1rem !default;
+$headings-font-family: 	null !default;
+$headings-font-weight: 	$font-weight-bold !default;
+$headings-line-height: 	1.2 !default;
+$headings-color: 		null !default;
+
+$paragraph-margin-bottom: 1rem !default;
+
+$dt-font-weight: $font-weight-bold !default;
+
+$h1-font-size-xl: $font-size-base * 2.5 !default;
+$h1-font-size-lg: $font-size-base * 1.5 !default;
+$h1-font-size-md: $font-size-base * 1.5 !default;
+$h1-font-size-sm: $font-size-base * 1.25 !default;
+
+
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1 !default;
+$h5-font-size: $font-size-base * 1 !default;
+
+// Links
+$link-color: 			$primary !default;
+$link-decoration: 		none !default;
+$link-hover-decoration: none !default;
+
+// Layout
+$gutter: 10px;
+$gutter-fluid: 4.0625vw;
+
+// Label
+$label-margin-bottom: 0.5rem !default;
+
+// Form
+$form-border-color: rgba($gray, .4);
+$input-padding-y: 0.688rem;
+$input-padding-x: 1.4rem;
+
+$input-font-size:                       1rem;
+$input-font-weight:                     $font-weight-base;
+$input-line-height:                     1.5;
+$input-color: 							$gray-medium;
+$input-bg: 								$white;
+$input-border-width: 					1px;
+$input-border-color: 					$gray-medium;
+$input-border-radius: 					42px;
+$input-transition: 						$transition-base;
+$input-focus-color: 					$gray-dark;
+$input-placeholder-color: 				$gray-medium;
+
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+	(
+		0: 0,
+		1: $spacer * 0.25,
+		2: $spacer * 0.5,
+		3: $spacer,
+		4: $spacer * 1.5,
+		5: $spacer * 2,
+		6: $spacer * 3,
+		7: $spacer * 4.875
+	),
+	$spacers
+);
+
+// Grid
+$grid-breakpoints: (
+	xs: 0,
+	md: 768px,
+	lg: 1280px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 40px !default;
+$container-max-widths: (
+	lg: 645px,
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// Display
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;

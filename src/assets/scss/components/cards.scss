@@ -1,0 +1,73 @@
+.card {
+    
+    &__body {
+        background-color: $card-bg;
+        border-radius: $border-radius-xs;
+        border: 1px solid transparent;
+        box-shadow: none;
+        
+        display: block;
+        cursor: pointer;
+        transition: $transition-card;
+        &:hover {
+            box-shadow: 0px 20px 20px -20px $card-shadow;
+        }
+    }
+    &__label {
+        position: relative;
+    }
+    &__title {
+        font-weight: $font-weight-medium;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    &__content {
+        font-style: italic;
+        font-size: .875rem;
+        position: relative;
+        
+    }
+    &__checkbox {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        &:checked {
+            & + .card__body  {
+                background-color: $primary;
+                color: $dark;
+                .card__icon {
+                    background-color: $dark;
+                    border-color: $dark;
+                }
+                path {
+                    animation: checkbox-check 0.2s 0.2s ease-out forwards;
+                }
+            }
+            
+        }
+         
+    }
+    &__icon {
+        border: solid 1px $card-icon-border;
+        border-radius: .325rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        position: absolute;
+        left: 1rem;
+        top: 1.125rem;
+        transition: $transition-base;
+        &-svg {
+            display: block;
+        }
+    }
+}
+
+@keyframes checkbox-check {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
