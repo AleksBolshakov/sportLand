@@ -6,24 +6,35 @@ title: Base
 <!-- main section -->
 <div class="app__wrapper">
     <div class="app__header">
-        <div class="app__header-title"> Найди ассоциации </div>
+        <div class="app__header-title"> Найди ассоциации</div>
         <div class="app__header-subtitle">Мы загадали самые распространенные!</div>
     </div>
 
     <div class="playtable">
         <div class="playtable__header">
             <div class="playtable__question">
-                <div class="playtable__question-counter">1/10 </div>
+                <div class="playtable__question-counter">1/10</div>
                 <div class="playtable__question-title">Две ассоциации<br>с «Челси»</div>
             </div>
         </div>
-        <div class="playtable__timer"></div>
+        <div class="playtable__timer">
+            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="2"
+                        stroke="#ffffff" fill="none"/>
+            </svg>
+            <div class="playtable__timer-value">
+                <span id='min'>00</span>
+                <span>:</span>
+                <span id='sec'>00</span>
+            </div>
+        </div>
         <div class="playtable__cards">
             <div class="playtable__cards-wrapper">
                 <div id="dropzone" class="playtable__cards-column playtable__column dropzone"></div>
-                <div class="playtable__cards-card"></div>
-                <div class="playtable__cards-card"></div>
-
+                <div class="playtable__cards-wrap">
+                    <div class="playtable__cards-card"></div>
+                    <div class="playtable__cards-card"></div>
+                </div>
             </div>
 
             <div class="playtable__cards-description">
@@ -31,12 +42,12 @@ title: Base
             </div>
         </div>
 
-        <div class="playtable__emoji playtable__emoji-1" data-title="Две ассоциации с «Челси»">
+        <div class="playtable__emoji playtable__emoji-1" data-answers="2" data-title="Две ассоциации с «Челси»">
             <div class="item" data-valid="false" data-title="Ошиблись, поищите еще!">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q1-1.png" alt="" />
+                            <img src="img/cards/q1-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -46,7 +57,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q1-2.png" alt="" />
+                            <img src="img/cards/q1-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -56,7 +67,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q1-3.png" alt="" />
+                            <img src="img/cards/q1-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -66,7 +77,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q1-4.png" alt="" />
+                            <img src="img/cards/q1-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -76,7 +87,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q1-5.png" alt="" />
+                            <img src="img/cards/q1-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -86,19 +97,20 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q1-6.png" alt="" />
+                            <img src="img/cards/q1-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
-        </div >
-        <div class="playtable__emoji playtable__emoji-2 hidden" data-title="Две ассоциации с «Баварией»">
+        </div>
+        <div class="playtable__emoji playtable__emoji-2 hidden" data-answers="2"
+             data-title="Две ассоциации с «Баварией»">
             <div class="item" data-valid="true" data-title="Пиво – неотъемлемая часть немецкого футбола">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q2-1.png" alt="" />
+                            <img src="img/cards/q2-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -108,17 +120,18 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q2-2.png" alt="" />
+                            <img src="img/cards/q2-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
-            <div class="item" data-valid="true" data-title="«Бавария» 32 раза выигрывала чемпионат Германии. Это рекорд!">
+            <div class="item" data-valid="true"
+                 data-title="«Бавария» 32 раза выигрывала чемпионат Германии. Это рекорд!">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q2-3.png" alt="" />
+                            <img src="img/cards/q2-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -128,7 +141,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q2-4.png" alt="" />
+                            <img src="img/cards/q2-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -138,7 +151,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q2-5.png" alt="" />
+                            <img src="img/cards/q2-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -148,19 +161,20 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q2-6.png" alt="" />
+                            <img src="img/cards/q2-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-3 hidden" data-title="Две ассоциации с «Бенфикой»">
+        <div class="playtable__emoji playtable__emoji-3 hidden" data-answers="2"
+             data-title="Две ассоциации с «Бенфикой»">
             <div class="item" data-valid="true" data-title="Верно! «Бенфика» играет в португальской Примейра-лиге">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q3-1.png" alt="" />
+                            <img src="img/cards/q3-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -170,7 +184,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q3-2.png" alt="" />
+                            <img src="img/cards/q3-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -180,7 +194,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q3-3.png" alt="" />
+                            <img src="img/cards/q3-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -190,7 +204,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q3-4.png" alt="" />
+                            <img src="img/cards/q3-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -200,7 +214,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q3-5.png" alt="" />
+                            <img src="img/cards/q3-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -210,19 +224,19 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q3-6.png" alt="" />
+                            <img src="img/cards/q3-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-4 hidden" data-title="Две ассоциации с «Реалом»">
+        <div class="playtable__emoji playtable__emoji-4 hidden" data-answers="2" data-title="Две ассоциации с «Реалом»">
             <div class="item" data-valid="true" data-title="Верно! Real в переводе с испанского – «королевский»">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q4-1.png" alt="" />
+                            <img src="img/cards/q4-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -232,7 +246,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q4-2.png" alt="" />
+                            <img src="img/cards/q4-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -242,7 +256,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q4-3.png" alt="" />
+                            <img src="img/cards/q4-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -252,7 +266,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q4-4.png" alt="" />
+                            <img src="img/cards/q4-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -262,7 +276,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q4-5.png" alt="" />
+                            <img src="img/cards/q4-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -272,29 +286,32 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q4-6.png" alt="" />
+                            <img src="img/cards/q4-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-5 hidden" data-title="Три ассоциации с «Манчестер Сити»">
-            <div class="item" data-valid="false" data-title="Бенжамен Менди сравнивал команду с акулами, а не крокодилами">
+        <div class="playtable__emoji playtable__emoji-5 hidden" data-answers="2"
+             data-title="Две ассоциации с «Манчестер Сити»">
+            <div class="item" data-valid="false"
+                 data-title="Бенжамен Менди сравнивал команду с акулами, а не крокодилами">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q5-1.png" alt="" />
+                            <img src="img/cards/q5-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
-            <div class="item" data-valid="true" data-title="«Лысый шарлатан» Пеп Гвардиола тренирует «Ман Сити» с 2016-года">
+            <div class="item" data-valid="true"
+                 data-title="«Лысый шарлатан» Пеп Гвардиола тренирует «Ман Сити» с 2016-года">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q5-2.png" alt="" />
+                            <img src="img/cards/q5-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -304,7 +321,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q5-3.png" alt="" />
+                            <img src="img/cards/q5-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -314,7 +331,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q5-4.png" alt="" />
+                            <img src="img/cards/q5-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -324,7 +341,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q5-5.png" alt="" />
+                            <img src="img/cards/q5-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -334,7 +351,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q5-6.png" alt="" />
+                            <img src="img/cards/q5-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -344,19 +361,19 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q5-7.png" alt="" />
+                            <img src="img/cards/q5-7.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-6 hidden" data-title="Три ассоциации с «Наполи»">
+        <div class="playtable__emoji playtable__emoji-6 hidden" data-answers="2" data-title="Две ассоциации с «Наполи»">
             <div class="item" data-valid="false" data-title="Ассоциаций, увы, нет">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q6-1.png" alt="" />
+                            <img src="img/cards/q6-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -366,7 +383,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q6-2.png" alt="" />
+                            <img src="img/cards/q6-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -376,7 +393,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q6-3.png" alt="" />
+                            <img src="img/cards/q6-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -386,7 +403,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q6-4.png" alt="" />
+                            <img src="img/cards/q6-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -396,7 +413,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q6-5.png" alt="" />
+                            <img src="img/cards/q6-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -406,7 +423,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q6-6.png" alt="" />
+                            <img src="img/cards/q6-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -416,19 +433,20 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q6-7.png" alt="" />
+                            <img src="img/cards/q6-7.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-7 hidden" data-title="Три ассоциации с «Ливерпулем»">
+        <div class="playtable__emoji playtable__emoji-7 hidden" data-answers="2"
+             data-title="Две ассоциации с «Ливерпулем»">
             <div class="item" data-valid="true" data-title="Верно! Real в переводе с испанского – «королевский»">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q7-1.png" alt="" />
+                            <img src="img/cards/q7-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -438,7 +456,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q7-2.png" alt="" />
+                            <img src="img/cards/q7-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -448,7 +466,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q7-3.png" alt="" />
+                            <img src="img/cards/q7-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -458,7 +476,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q7-4.png" alt="" />
+                            <img src="img/cards/q7-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -468,7 +486,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q7-5.png" alt="" />
+                            <img src="img/cards/q7-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -478,29 +496,32 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q7-6.png" alt="" />
+                            <img src="img/cards/q7-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
-            <div class="item" data-valid="true" data-title="Мохаммед Салах – форвард не только «Ливерпуля», но и сборной Египта">
+            <div class="item" data-valid="true"
+                 data-title="Мохаммед Салах – форвард не только «Ливерпуля», но и сборной Египта">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q7-7.png" alt="" />
+                            <img src="img/cards/q7-7.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-8 hidden" data-title="Три ассоциации с «Интером»">
-            <div class="item" data-valid="false" data-title="Фонтан Треви находится в Риме, а вот «Интер» – клуб из Милана">
+        <div class="playtable__emoji playtable__emoji-8 hidden" data-answers="2"
+             data-title="Две ассоциации с «Интером»">
+            <div class="item" data-valid="false"
+                 data-title="Фонтан Треви находится в Риме, а вот «Интер» – клуб из Милана">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q8-1.png" alt="" />
+                            <img src="img/cards/q8-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -510,7 +531,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q8-2.png" alt="" />
+                            <img src="img/cards/q8-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -520,7 +541,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q8-3.png" alt="" />
+                            <img src="img/cards/q8-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -530,7 +551,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q8-4.png" alt="" />
+                            <img src="img/cards/q8-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -540,7 +561,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q8-5.png" alt="" />
+                            <img src="img/cards/q8-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -550,7 +571,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q8-6.png" alt="" />
+                            <img src="img/cards/q8-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -560,19 +581,19 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q8-7.png" alt="" />
+                            <img src="img/cards/q8-7.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-9 hidden" data-title="Три ассоциации с «ПСЖ»">
+        <div class="playtable__emoji playtable__emoji-9 hidden" data-answers="2" data-title="Две ассоциации с «ПСЖ»">
             <div class="item" data-valid="false" data-title="Мы знаем только футбольный клуб «ПСЖ»">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-1.png" alt="" />
+                            <img src="img/cards/q9-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -582,7 +603,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-2.png" alt="" />
+                            <img src="img/cards/q9-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -592,7 +613,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-3.png" alt="" />
+                            <img src="img/cards/q9-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -602,7 +623,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-4.png" alt="" />
+                            <img src="img/cards/q9-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -612,7 +633,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-5.png" alt="" />
+                            <img src="img/cards/q9-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -622,7 +643,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-6.png" alt="" />
+                            <img src="img/cards/q9-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -632,7 +653,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-7.png" alt="" />
+                            <img src="img/cards/q9-7.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -642,29 +663,31 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q9-8.png" alt="" />
+                            <img src="img/cards/q9-8.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
         </div>
-        <div class="playtable__emoji playtable__emoji-10 hidden" data-title="Три ассоциации с «Боруссией»">
+        <div class="playtable__emoji playtable__emoji-10 hidden" data-answers="2"
+             data-title="Две ассоциации с «Боруссией»">
             <div class="item" data-valid="false" data-title="Ну уж нет! Футболисты не ходят с портфелями">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-1.png" alt="" />
+                            <img src="img/cards/q10-1.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
-            <div class="item" data-valid="true" data-title="Брецель – популярный немецкий крендель, а «Боруссия» – популярный немецкий клуб">
+            <div class="item" data-valid="true"
+                 data-title="Брецель – популярный немецкий крендель, а «Боруссия» – популярный немецкий клуб">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-2.png" alt="" />
+                            <img src="img/cards/q10-2.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -674,7 +697,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-3.png" alt="" />
+                            <img src="img/cards/q10-3.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -684,17 +707,18 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-4.png" alt="" />
+                            <img src="img/cards/q10-4.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
                 </div>
             </div>
-            <div class="item" data-valid="true" data-title="Капитан команды Марко Ройс – один из самых травматичных игроков современности">
+            <div class="item" data-valid="true"
+                 data-title="Капитан команды Марко Ройс – один из самых травматичных игроков современности">
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-5.png" alt="" />
+                            <img src="img/cards/q10-5.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -704,7 +728,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-6.png" alt="" />
+                            <img src="img/cards/q10-6.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -714,7 +738,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-7.png" alt="" />
+                            <img src="img/cards/q10-7.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -724,7 +748,7 @@ title: Base
                 <div class="playtable__emoji-item draggable">
                     <div class="playtable__emoji-side playtable__emoji-front">
                         <div class="playtable__emoji-img">
-                            <img src="img/cards/q10-8.png" alt="" />
+                            <img src="img/cards/q10-8.png" alt=""/>
                         </div>
                     </div>
                     <div class="playtable__emoji-side playtable__emoji-back"></div>
@@ -733,19 +757,56 @@ title: Base
         </div>
 
 
-
         <div class="playtable__loader mt-5">
             <div class="progress mb-5">
                 <div class="progress__bar" style="width: 0%"></div>
             </div>
-            <button class="btn btn__default" type="button">К следующему вопросу</button>
+            <button class="btn btn__default btn__continue" type="button">К следующему вопросу</button>
         </div>
 
         <div class="playtable__end">
-            <div class="playtable__end-title">Хорошая работа! Воспользуйтесь <span>бонусом 2000₽ от Фонбет</span> и возвращайтесь в игру!</div>
+            <div class="playtable__end-title">Хорошая работа! Воспользуйтесь <span>бонусом 2000₽</span> и
+                возвращайтесь в игру!
+            </div>
             <div class="playtable__end-actions">
                 <a href="" class="btn btn__primary">Забрать фрибет</a>
-                <button class="btn btn__default" type="button">Продолжить игру</button>
+                <button class="btn btn__default btn__continue" type="button">Продолжить игру</button>
+            </div>
+        </div>
+
+        <div class="playtable__last">
+            <div class="result__info">
+                <div class="result__stats">
+                    <div class="result__time">
+                        <span class="result__time-min"></span>
+                        :
+                        <span class="result__time-sec"></span>
+                    </div>
+                    <div class="result__questions">
+                        10 из 10
+                    </div>
+                </div>
+                <div class="result__card" style="">
+                    <div class="playtable__emoji-item draggable">
+                        <div class="playtable__emoji-side playtable__emoji-front">
+                            <div class="playtable__emoji-img">
+                                <picture>
+                                    <source srcset="img/smile.webp" type="image/webp">
+                                    <img src="img/smile.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="playtable__emoji-side playtable__emoji-back"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="playtable__last-title">
+                Вы угадали <span id="resultTotalText">10 ассоциаций</span> за <span id="resultSeconds"></span> секунд. Ловите подарок – <span>фрибет 2000 ₽</span>
+                на матчи Лиги чемпионов
+            </div>
+            <div class="playtable__last-actions">
+                <a href="" class="btn btn__primary">Забрать фрибет</a>
             </div>
         </div>
     </div>

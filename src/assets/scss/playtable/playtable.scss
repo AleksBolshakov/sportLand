@@ -6,7 +6,19 @@
     align-items: center;
     position: relative;
     margin-bottom: 3vh;
+    @include media-breakpoint-down(md) {
+        width: 100%;
+    }
+    @include media-breakpoint-down(xs) {
+        padding-bottom: 135px;
+        min-height: calc(100vh - 82px);
+        margin: 0;
+        justify-content: flex-start;
+    }
     &__header {
         margin-top: 1rem;
+        @include media-breakpoint-down(md) {
+            margin-top: 0;
+        }
     }
 }

@@ -10,6 +10,9 @@
         color: #fff;
         text-align: center;
         margin-bottom: 0.5rem;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+        }
     }
     &-title {
         font-size: 3rem;
@@ -17,6 +20,9 @@
         color: #fff;
         text-align: center;
         flex: 1;
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
     }
 }
 

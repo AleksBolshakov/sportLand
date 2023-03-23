@@ -22,12 +22,6 @@ export const html = () => {
             helpers: `${app.path.srcFolder}/helpers/`,
             data: `${app.path.srcFolder}/data/`,
         }))
-        .pipe(webpHtml({
-            extensions: ['jpg', 'jpeg', 'png'],
-            checkExists: false,
-            noWebp: false,
-            publicPath: '.'
-        }))
         .pipe(app.gulp.dest(app.path.build.html))
 
         .pipe(app.plugins.browserSync.stream())

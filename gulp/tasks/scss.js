@@ -25,34 +25,34 @@ export const scss = () => {
             outputStyle: 'expanded'
         }))
         
-        .pipe(
-            app.plugins.if(
-                app.isBuild,
-                purgecss({
-                    content: ['src/**/*.html'],
-                    keyframes: true,
-                    variables: true,
-                    fontFace: true,
-                    safelist: [
-                        'modal-backdrop', 
-                        'show', 
-                        'fixed', 
-                        'is-show',
-                        'sub__open',
-                        'visible',
-                        'transition',
-                        'caret',
-                        'check',
-                        'header__fixed',
-                        /close+/g,
-                        /collaps?(e|ing)+/g,
-                        /^card/, 
-                        /^col/,
-                        /^glider/
-                    ]
-                })
-            )
-        )
+        // .pipe(
+        //     app.plugins.if(
+        //         app.isBuild,
+        //         purgecss({
+        //             content: ['src/**/*.html'],
+        //             keyframes: true,
+        //             variables: true,
+        //             fontFace: true,
+        //             safelist: [
+        //                 'modal-backdrop',
+        //                 'show',
+        //                 'fixed',
+        //                 'is-show',
+        //                 'sub__open',
+        //                 'visible',
+        //                 'transition',
+        //                 'caret',
+        //                 'check',
+        //                 'header__fixed',
+        //                 /close+/g,
+        //                 /collaps?(e|ing)+/g,
+        //                 /^card/,
+        //                 /^col/,
+        //                 /^glider/
+        //             ]
+        //         })
+        //     )
+        // )
         .pipe(
             app.plugins.if(
                 app.isBuild,

@@ -4,6 +4,10 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    @include media-breakpoint-down(md) {
+        margin-top: 0;
+        padding-top: 20px;
+    }
     &-title {
         color: #fff;
         font-weight: 700;
@@ -11,6 +15,10 @@
         text-transform: uppercase;
         text-align: center;
         margin: 1rem 0;
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
     }
     &-subtitle {
         font-size: 2.4rem;
@@ -18,5 +26,8 @@
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
+        @include media-breakpoint-down(md) {
+            font-size: 13px;
+        }
     }
 }

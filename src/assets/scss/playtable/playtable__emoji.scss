@@ -4,6 +4,17 @@
     display: flex;
     padding-bottom: 6rem;
     user-select: none;
+    @include media-breakpoint-down(md) {
+        margin-top: 20px;
+    }
+    @include media-breakpoint-down(xs) {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: 150px;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 0;
+    }
     &.hidden {
         display: none;
     }
@@ -48,6 +59,11 @@
         cursor: pointer;
         -webkit-animation: liveTransform 4s ease infinite;
         animation: liveTransform 4s ease infinite;
+        touch-action: none;
+        @include media-breakpoint-down(xs) {
+            width: 44px;
+            height: 66px;
+        }
         &.ghost {
             transform: none;
             animation: none;
