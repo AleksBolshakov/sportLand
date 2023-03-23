@@ -1,0 +1,139 @@
+.result {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.result__info {
+  display: flex;
+  margin-bottom: 5rem;
+  margin-top: 3rem
+}
+
+@media (max-width: 900px) {
+  .result__info {
+    margin-bottom: 4rem;
+    margin-top: 4rem
+  }
+}
+
+.result__stats {
+  display: flex;
+  flex-flow: column
+}
+
+.result__time {
+  font-size: 6.4rem;
+  display: flex;
+  color: #fff;
+  align-items: baseline
+}
+
+@media (max-width: 900px) {
+  .result__time {
+    font-size: 4rem
+  }
+}
+
+.result__timer {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA0CAYAAAAaNmH0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMmSURBVHgB7VqNldowDBY3QTaoNygjeIPrBqUTtBuQTnC3Qdjg2gmgE8BNEDoBbKCTiMMZY8e/hNx7970nkrxYsiTLjiwzgwwgoqSLhHTsZrPZHxgbpPgcy+AXJOIB0iGhDB5hbJDHBFGL+fgGiZhBJtgISMeRYv4In5gQVFiuVWg9wVigzirV+ZkgErwKGXOjgdJQikqiZ6It0WFgcvL7hmjhM0jJxJsYoCk8pKwPaxxYbehdXdQAvIzFUmiJFrEGRC2VxLSkC38RK0cTXvY2RP/VfQ9u/4VoTiTAjRXRb1o+90a/NV2WlrZ+eLx9UN6REbI45rcDozC38F2NQGhnLUYMdSiwmzcuI76DxwCfcJfiPFErKAQ1Em2gAdz2BYcSOofiHCISwhT6qfibEEMHHCUhFsS0M4SwYBHIWxm8QWmv4ttaHCYgFNR4maq44hcGfx3BazNgHcosMHPocpTX+FuMHT1qtMrpWOs8V4aZHnD4VDGdtpCAEsorOeGOtDReQAIKKm/KOQw1PuR6HQoqr2SZDpX9uwetEWd3ekz9hWlgZTyfs1C9eiA9THcBJWkbuEzyztUGXfmv2j1vjHcwHehRIPpVR1dez+SmpDjD1Efwz0l5ZYke768wLeyN55Oje8+bi//UailWfXLKfWNibzwL/vkoygvj+TQSLuWLbTRuhHflzQ0vDG+SvVDydlpHK8iDuafdXzzhZQqanBoYMiUW2C5aUoTK10DARICXm5OzY/WY3xg8yXXzklBO1MPm1dbI3HeGbb1uDAxN0/G6sCThzjDm4mA+L6fkfbwuBDQ+hrXBkHxalwO0FwKEj8m28RUwMvC6bvQcyvhiMPJSNdpXF3PqRtitPO09DLAozpAxMlwn3Fu8YQiR7CdLnzWkALuKLFqGsOgHDN31/xpy4DCA0eSOAnbhuUT7uVbYBA3oRKL7qL7BtFrmEt2HcXWInOAzKeVl/khIR5M9dGnwP3V/hPftm9DoEdwpN/P9UOWO8kD3KUYO+nOtcZbjQkb0Sgu4B7CbD5z5bSMUbpTxWZ7O/suKDqUM5958Fep61Ghn2XIm4w3d0D7xbhKRgwAAAABJRU5ErkJggg==) top/contain no-repeat;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1rem
+}
+
+@media (max-width: 900px) {
+  .result__timer {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: .6rem
+  }
+}
+
+.result__questions {
+  font-size: 3.5rem;
+  display: flex;
+  color: #fff;
+  align-items: center
+}
+
+@media (max-width: 900px) {
+  .result__questions {
+    font-size: 2rem;
+    line-height: 2rem
+  }
+}
+
+.result__question {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANDSURBVHgB1VmBdaMwDFXyOgAjeINmg9INusGxQbNB0gmSTkA6QXIThJugdxPABmQDnXw2L0bYYGNz1/vv6QWIJX+ELNsywH+KFSwARBT0k2np0KxWqwYSIQlxIprTzwvJE4mAPmGOiuQXyYVepIK/DelVkh1Ji/NRk5T6Cy1OOCM5YXqUIS8QFCpk+JV+9uAOhRvcQ6Fh/wmSR5KNvnbpv1EIHSEFtJfPDk/JUNmjinNfexuSow4Vl/cziAGqWK4dhAuIhLThsF/j3NgfIX2M9ki/n0zbjCevjdUWL7/AQtDeby3k/Z2Ew8whDWxgYaCKf+6ws6/yq8XTQaR1mOVaQnU3OPT81qdDrlSAB3SHJdonpRYDcrUMSYt+NqbAQ8Qrp1q+0hh2njb5gC1dDQVrWKPHwEA1qGyo0b0kmBzkqBIE1xe2htzbBXgAh4Oply61Qz5Zm09P29wp+ykCtafhnBkuHe38vGfXNfVa+WxtEoD+GuI7+IFnjA9bI1p/3Cw2Bfjh3biWDsgfjAc85k7gh8psO7HGnjvbViTmgL5zpbe4hoZJCNA+E4sA/dY6PpjBCyQGqhw+ORZG9C9mnK/1Q8Ha/YREQJVRrnRZGI8bkjcIg8kp62JcsEYNJACqqf7M7DckzzM2zo15s4aFoL+i9LQwHlcwj/QAixEHRdrMIu9E+DlViaIjfoOEsMwJJyK8hYRwERcQB8HuPyAewrz5Q1x/PpN86g1DA/HocXpgxrs/nyAOFdzT3S1RXD8y+wo4XPvm8EWAaoNi4mhmFT5b5vB1ULD7Plfb8nEOtIeuem1yxcjaIE4tt1FVpEwUMANoL2vMWhnicCNR2hqJ2A5xuLGYPWYwZEWJw+3bAQKgO7NBQCBk35PeZh3zLVZQ9QqHIbeHQOAwRNrJl6cGW4tSaFFHOkAO0uDYxjkFIUOZl5Vr/HclOP9NB7qLngUsBLL9DWOLntqQQHuZ+YCYvMx8sPQj+xYwByPka0xX2G+TkjaMjx1YyQ7kOsc7/lHl+h26y3PnqS8aenglR7asb7iMNqA2tWOHVzmMH36lO7wyoUPH5f0YlJhw3Pi8QI3z0Z3YCQhE6iPxLhRckKHQkPyAyCPx3/Ta1thsy+vqAAAAAElFTkSuQmCC) top/contain no-repeat;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1rem
+}
+
+@media (max-width: 900px) {
+  .result__question {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: .6rem
+  }
+}
+
+.result__card {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center
+}
+
+@media (max-width: 900px) {
+  .result__card {
+    margin-left: 2rem
+  }
+}
+
+.result__caption {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #fff;
+  max-width: 50rem;
+  text-align: center
+}
+
+.result__caption span {
+  color: #d52d30 !important;
+  cursor: pointer
+}
+
+@media (max-width: 900px) {
+  .result__caption {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    max-width: 26rem
+  }
+}
+
+.result__buttons {
+  display: flex;
+  margin-top: 6rem;
+  padding-bottom: 6rem
+}
+
+@media (max-width: 900px) {
+  .result__buttons {
+    flex-flow: column;
+    margin-top: 4rem
+  }
+}
+
+.result__button + .result__button {
+  margin-left: 3.6rem
+}
+
+@media (max-width: 900px) {
+  .result__button + .result__button {
+    margin-left: 0;
+    margin-top: 2rem
+  }
+}

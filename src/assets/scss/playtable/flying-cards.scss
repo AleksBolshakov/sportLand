@@ -1,0 +1,295 @@
+.flying-cards__top-group {
+  position: absolute;
+  top: -8rem;
+  right: 38%;
+  width: 15rem;
+  opacity: .7;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  cursor: pointer
+}
+
+@media (max-width: 900px) {
+  .flying-cards__top-group {
+    display: none
+  }
+}
+
+@-webkit-keyframes moveTopGroupCard {
+  0% {
+    transform: translateY(0)
+  }
+  47% {
+    transform: translateY(2%)
+  }
+  50% {
+    transform: translateY(9%)
+  }
+  52% {
+    transform: translateY(2%)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+@keyframes moveTopGroupCard {
+  0% {
+    transform: translateY(0)
+  }
+  47% {
+    transform: translateY(2%)
+  }
+  50% {
+    transform: translateY(9%)
+  }
+  52% {
+    transform: translateY(2%)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+@-webkit-keyframes hideTopGroupCard {
+  5% {
+    transform: translateY(-10rem)
+  }
+  95% {
+    transform: translateY(-10rem)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+@keyframes hideTopGroupCard {
+  5% {
+    transform: translateY(-10rem)
+  }
+  95% {
+    transform: translateY(-10rem)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+.flying-cards__card {
+  position: absolute;
+  transition: transform .2s ease;
+  width: 10.5rem;
+  height: 13rem
+}
+
+@media (max-width: 900px) {
+  .flying-cards__card {
+    width: 6rem;
+    height: 8rem
+  }
+}
+
+.flying-cards__card--first {
+  background: url(../img/first-card.c4537331.png) top/contain no-repeat;
+  top: 14rem;
+  left: -3rem;
+  opacity: .8;
+  -webkit-animation: moveFirst 14s ease infinite;
+  animation: moveFirst 14s ease infinite;
+  z-index: 1
+}
+
+@media (max-width: 900px) {
+  .flying-cards__card--first {
+    display: none
+  }
+}
+
+@-webkit-keyframes moveFirst {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(10%) rotate(-2deg)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+@keyframes moveFirst {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(10%) rotate(-2deg)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+.flying-cards__card--second {
+  background: url(../img/second-card.4eb31f22.png) top/contain no-repeat;
+  top: 11rem;
+  left: 0;
+  opacity: .8;
+  -webkit-animation: moveSecond 14s ease 3s infinite;
+  animation: moveSecond 14s ease 3s infinite
+}
+
+@media (max-width: 900px) {
+  .flying-cards__card--second {
+    top: -2rem;
+    left: -2rem
+  }
+}
+
+@-webkit-keyframes moveSecond {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(10%) rotate(4deg)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+@keyframes moveSecond {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(10%) rotate(4deg)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+.flying-cards__card--third {
+  background: url(../img/fifth-card.6f2b5029.png) top/contain no-repeat;
+  top: 0;
+  left: 0;
+  -webkit-animation: moveTopGroupCard 15s ease infinite;
+  animation: moveTopGroupCard 15s ease infinite
+}
+
+.flying-cards__card--third.flying-cards__card--hidden {
+  -webkit-animation: hideTopGroupCard 10s ease;
+  animation: hideTopGroupCard 10s ease
+}
+
+.flying-cards__card--fourth {
+  background: url(../img/fourth-card.363a0bce.png) top/contain no-repeat;
+  top: 0;
+  left: 20%;
+  -webkit-animation: moveTopGroupCard 15s ease .3s infinite;
+  animation: moveTopGroupCard 15s ease .3s infinite
+}
+
+.flying-cards__card--fourth.flying-cards__card--hidden {
+  -webkit-animation: hideTopGroupCard 10s ease .1s;
+  animation: hideTopGroupCard 10s ease .1s
+}
+
+.flying-cards__card--fifth {
+  background: url(../img/third-card.9c524d40.png) top/contain no-repeat;
+  top: 0;
+  left: 20%;
+  transform: translate(0);
+  transition: transform .3s;
+  -webkit-animation: moveTopGroupCard 15s ease .6s infinite;
+  animation: moveTopGroupCard 15s ease .6s infinite
+}
+
+.flying-cards__card--fifth.flying-cards__card--hidden {
+  -webkit-animation: hideTopGroupCard 10s ease .2s;
+  animation: hideTopGroupCard 10s ease .2s
+}
+
+.flying-cards__card--sixth {
+  background: url(../img/first-card.c4537331.png) top/contain no-repeat;
+  bottom: 16%;
+  right: -4rem;
+  opacity: .8;
+  -webkit-animation: moveSixth 14s ease infinite;
+  animation: moveSixth 14s ease infinite;
+  z-index: 1
+}
+
+@media (max-width: 900px) {
+  .flying-cards__card--sixth {
+    z-index: 0;
+    bottom: 16rem;
+    right: -6%
+  }
+}
+
+@-webkit-keyframes moveSixth {
+  0% {
+    transform: translateY(0) rotate(-6deg)
+  }
+  50% {
+    transform: translateY(10%) rotate(-8deg)
+  }
+  to {
+    transform: translateY(0) rotate(-6deg)
+  }
+}
+
+@keyframes moveSixth {
+  0% {
+    transform: translateY(0) rotate(-6deg)
+  }
+  50% {
+    transform: translateY(10%) rotate(-8deg)
+  }
+  to {
+    transform: translateY(0) rotate(-6deg)
+  }
+}
+
+.flying-cards__card--seventh {
+  background: url(../img/second-card.4eb31f22.png) top/contain no-repeat;
+  bottom: 8%;
+  right: -2rem;
+  opacity: .8;
+  transform: rotate(-6deg);
+  -webkit-animation: moveSeventh 14s ease 3s infinite;
+  animation: moveSeventh 14s ease 3s infinite
+}
+
+@media (max-width: 900px) {
+  .flying-cards__card--seventh {
+    bottom: 18rem
+  }
+}
+
+@-webkit-keyframes moveSeventh {
+  0% {
+    transform: translateY(0) rotate(-6deg)
+  }
+  50% {
+    transform: translateY(10%) rotate(-8deg)
+  }
+  to {
+    transform: translateY(0) rotate(-6deg)
+  }
+}
+
+@keyframes moveSeventh {
+  0% {
+    transform: translateY(0) rotate(-6deg)
+  }
+  50% {
+    transform: translateY(10%) rotate(-8deg)
+  }
+  to {
+    transform: translateY(0) rotate(-6deg)
+  }
+}
